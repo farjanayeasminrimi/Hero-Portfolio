@@ -292,103 +292,114 @@ textarea {
 }
 
 /* Responsive */
-@media screen and (max-width:576px){
+@media screen and (max-width: 576px) {
   /* shared style */
-    nav,.hero-section,.buttons ,.about-info,.summary-container{
+  nav,
+  .hero-section,
+  .buttons,
+  .about-info,
+  .summary-container {
     flex-direction: column;
     gap: 25px;
   }
   /* header section */
-  .hero-section{
+  header {
+    background: url(../images/header_bg.png), #fff8f3;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  .hero-section {
     width: 100%;
     margin: 0px;
   }
   .hero-content {
     width: 75%;
     margin-top: 50px;
-}
-.hero-content h1 {
+    text-align: center;
+  }
+  .hero-content h1 {
     font-size: 51px;
-}
-.hero-image {
+  }
+  .hero-image {
     width: 100%;
     margin-top: 25px;
-}
+  }
 
-.hero-image img {
+  .hero-image img {
     width: 100%;
-}
-/* about section */
-.about-section{
-  width: 100%;
-  padding: 70px 25px;
-}
-/* Language section */
-.lang-section{
-  width: 100%;
-}
-.lang-info{
-  flex-direction: column;
-}
-.lang-box {
+  }
+  /* about section */
+  .about-section {
+    width: 100%;
+    padding: 70px 25px;
+  }
+  /* Language section */
+  .lang-section {
+    width: 100%;
+  }
+  .lang-info {
+    flex-direction: column;
+  }
+  .lang-box {
     width: 100%;
     padding: 50px;
     text-align: justify;
-}
-/* resume section */
-.summary-container{
-  gap: 70px;
-}
-.summary-box, .summary-content{
+  }
+  /* resume section */
+  .summary-container {
+    gap: 70px;
+  }
+  .summary-box,
+  .summary-content {
     width: 100%;
-}
-/* footer section */
-.footer-container{
-  flex-direction: column;
-  gap: 110px;
-}
-.message-container {
+  }
+  /* footer section */
+  .footer-container {
+    flex-direction: column;
+    gap: 110px;
+  }
+  .message-container {
     width: 100%;
-}
+  }
 }
 
 /* Medium size device responsive */
-@media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width: 576px) and (max-width: 992px) {
   /* Header section */
-nav,.hero-section {
+  nav,
+  .hero-section {
     flex-direction: column;
     gap: 25px;
   }
-.logo h1 {
+  .logo h1 {
     font-size: 5rem;
     margin-bottom: 10px;
-}
-  .hero-section{
+  }
+  .hero-section {
     width: 100%;
     margin: 0px;
-            margin-top: 50px;
+    margin-top: 50px;
   }
 
-.hero-content {
+  .hero-content {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-}
-.buttons {
-
+  }
+  .buttons {
     justify-content: center;
-}
-.hero-image {
+  }
+  .hero-image {
     width: 100%;
     margin-top: 25px;
-}
+  }
 
-.hero-image img {
+  .hero-image img {
     width: 100%;
-}
-/*about section*/
-.about-section {
+  }
+  /*about section*/
+  .about-section {
     width: 90%;
     padding: 70px 20px;
-}
+  }
 }
