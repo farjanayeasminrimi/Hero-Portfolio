@@ -32,7 +32,8 @@
 header {
   padding-top: 50px;
   /* background-color: #fff8f3; */
-  background: url(../images/developer.png), url(../images/header_bg.png),#fff8f3;
+  background: url(../images/developer.png), url(../images/header_bg.png),
+    #fff8f3;
   background-repeat: no-repeat;
   /* background-size: contain; */
   background-position: 23px 38px, bottom right;
@@ -129,59 +130,265 @@ nav {
   margin: 20px 0px;
 }
 
-.about-info{
+.about-info {
   display: flex;
   gap: 25px;
   justify-content: space-around;
   text-align: center;
 }
-.info-box p{
+.info-box p {
   font-size: 16px;
   color: #757575;
   font-weight: 400;
   line-height: 30px;
 }
-.info-box h2{
+.info-box h2 {
   font-size: 16px;
   color: #474747;
 }
 
 /* about-section ended */
 
-
 /* lang-section started */
 
-.lang-section{
+.lang-section,
+.resume-section {
   width: 80%;
-  margin: 120px auto
+  margin: 120px auto;
 }
 
-.lang-info{
-  display: flex; 
+.lang-info {
+  display: flex;
   /* gap: 24px; */
   justify-content: space-around;
-  
 }
-.lang-box{
+.lang-box {
   width: 220px;
   padding: 30px;
   /* text-align: justify; */
 }
-.lang-box img{
+.lang-box img {
   width: 30px;
   height: 30px;
 }
-.lang-box h2{
+.lang-box h2 {
   margin: 12px 0px;
   font-size: 18px;
   color: #474747;
 }
-.lang-box p{
+.lang-box p {
   font-size: 14px;
   color: #757575;
-  
 }
-.lang-content p{
-  width: 70%; margin: 25px auto;
+.lang-content p {
+  width: 70%;
+  margin: 25px auto;
   line-height: 30px;
+}
+/* resume-section started */
+
+.summary-container {
+  display: flex;
+  gap: 30px;
+  padding-top: 110px;
+}
+.summary-box {
+  width: 50%;
+}
+.summary-box hr {
+  border-top: 1px solid #d1d1d1;
+}
+.summary-box h2 {
+  color: #474747;
+  font-size: 1.8rem;
+}
+.summary-content {
+  margin: 25px 0px;
+  width: 90%;
+}
+.summary-content h3 {
+  color: #474747;
+  font-size: 1.3rem;
+}
+.summary-content h4 {
+  color: #474747;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.summary-content p {
+  color: #757575;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.resume-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+/* footer area started */
+footer {
+  background-color: #fff8f3;
+}
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 120px 0px;
+  display: flex;
+  gap: 110px;
+}
+.footer-title {
+  font-size: 1.7rem;
+  color: #181818;
+  margin-bottom: 25px;
+}
+
+.connect-container p {
+  font-size: 0.9rem;
+  color: #474747;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-menu li {
+  list-style: none;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #fd6e0a;
+  font-size: 1rem;
+}
+
+.footer-menu li:hover {
+  cursor: pointer;
+}
+.message-container input,
+textarea {
+  width: 75%;
+  display: block;
+  border: none;
+  outline: none;
+  padding: 22px 30px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.message-container {
+  width: 70%;
+}
+
+.message-container textarea {
+  height: 25vh;
+}
+
+.message-container button {
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width:576px){
+  /* shared style */
+    nav,.hero-section,.buttons ,.about-info,.summary-container{
+    flex-direction: column;
+    gap: 25px;
+  }
+  /* header section */
+  .hero-section{
+    width: 100%;
+    margin: 0px;
+  }
+  .hero-content {
+    width: 75%;
+    margin-top: 50px;
+}
+.hero-content h1 {
+    font-size: 51px;
+}
+.hero-image {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.hero-image img {
+    width: 100%;
+}
+/* about section */
+.about-section{
+  width: 100%;
+  padding: 70px 25px;
+}
+/* Language section */
+.lang-section{
+  width: 100%;
+}
+.lang-info{
+  flex-direction: column;
+}
+.lang-box {
+    width: 100%;
+    padding: 50px;
+    text-align: justify;
+}
+/* resume section */
+.summary-container{
+  gap: 70px;
+}
+.summary-box, .summary-content{
+    width: 100%;
+}
+/* footer section */
+.footer-container{
+  flex-direction: column;
+  gap: 110px;
+}
+.message-container {
+    width: 100%;
+}
+}
+
+/* Medium size device responsive */
+@media screen and (min-width:576px) and (max-width:992px){
+  /* Header section */
+nav,.hero-section {
+    flex-direction: column;
+    gap: 25px;
+  }
+.logo h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+  .hero-section{
+    width: 100%;
+    margin: 0px;
+            margin-top: 50px;
+  }
+
+.hero-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.buttons {
+
+    justify-content: center;
+}
+.hero-image {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.hero-image img {
+    width: 100%;
+}
+/*about section*/
+.about-section {
+    width: 90%;
+    padding: 70px 20px;
+}
 }
